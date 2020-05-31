@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Korsh Todo List</title>
+	<link rel="stylesheet" href="styles.css">
+	
+<script src="https://use.fontawesome.com/1e4f13e806.js"></script>
+</head>
+<body>
+	<div>
+		<h1>#100daysofCode Challenge</h1>
+		<p>Enter text into the field to add items to your list(max: 140 characters).</p>
+		<p>Click the item to mark it as complete.</p>
+		<p>Click the "X" to remove the item from your list.</p>
+	</div>
+		
+<div class="wrapper">
+	<div class="form-holder">
+		<div>
+			<input id="addTodoTextInput" type="text" placeholder="Enter todo" name="input" required>
+			<button class="btn" id="addBtn" onclick="handlers.addTodo()" type="button">Add</button>
+		</div>
+
+		<!-- <div>
+			<button class="btn" onclick="handlers.changeTodo()" type="button">Edit</button>
+			<input id="changeTodoPositionInput" type="number">
+			<input id="changeTodoTextInput" type="text">
+		</div> -->
+		
+				
+		<div>
+			<button class="btn" onclick="handlers.toggleAll()" type="button">Toggle</button>
+		</div>
+
+		<!-- <div>
+			<button class="btn" onclick="handlers.toggleCompleted()" type="button">Toggle Completed</button>
+			<input id="toggleCompletedPositionInput" type="number">
+		</div> -->
+		</div>
+		
+
+	
+	<ul>
+		
+	</ul>
+</div>
+	<script src="script.js"></script>	
+</body>
+</html>
